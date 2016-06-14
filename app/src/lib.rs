@@ -7,3 +7,4 @@ mod tests {
 
 pub mod engine;
 pub mod display;
+pub mod board;
