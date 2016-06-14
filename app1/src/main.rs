@@ -60,12 +60,19 @@ fn random_board() -> Board {
 }
 
 fn neighbors(board: Board, i: u32, j: u32) -> u8 {
+
     let mut count = 0u8;
+
     for coord in NEIGHBOR_CELLS.iter() {
+
         let &(i1, j1) = coord;
         let x: i32 = i as i32 + i1 as i32;
         let y: i32 = j as i32 + j1 as i32;
-        if x >= 0 && x < ROWS_I && y >= 0 && y < COLS_I && board[x as usize][y as usize].actual {
+
+        if x >= 0 && x < ROWS_I &&
+            y >= 0 && y < COLS_I &&
+            board[x as usize][y as usize].actual {
+
             count += 1;
         }
     }

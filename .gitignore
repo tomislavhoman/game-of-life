@@ -1,4 +1,4 @@
-target
-Cargo.lock
-.idea
-*.zip
+/.idea
+.DS_Store
+/app/target/**/*
+/app1/target/**/*
