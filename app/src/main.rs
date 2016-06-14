@@ -4,7 +4,6 @@ use app::display::Display as Display;
 
 fn main() {
 	let engine: Engine = Engine { x: 42 };
-	let display: Display = Display {};
-    println!("{}", engine.run());
+	let display: Display = Display { board: engine.run()};
     println!("{}", display.draw());
 }
