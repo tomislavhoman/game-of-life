@@ -1,7 +1,0 @@
-[package]
-name = "game-of-life"
-version = "0.1.0"
-authors = ["Ivan Tokić <toxxmeister@gmail.com>", "Josip Marković <josip.markovic@infinum.co>"]
-
-[dependencies]
-rand = "0.3"
